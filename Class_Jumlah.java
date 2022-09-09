@@ -11,7 +11,8 @@ public class Class_Jumlah {
      */
     public static void main(String[] args) {
         int[] nim = {2,1,4,1,7,6,2,0,4,6};
-
+        
+        //Menggunakan perulangan DO-WHILE
         int k=0;
         int sum=0;
         do{
@@ -19,6 +20,14 @@ public class Class_Jumlah {
             k++;
         }
         while(k < nim.length);
-        System.out.println(sum);
+        System.out.println("Penjumlahan NIM = " + sum);
+        
+        System.out.println(" ");
+        
+        //Menggunakan perulangan FOR
+        for(int k=0; k < nim.length; k++){
+            sum += nim[k];
+        }
+        System.out.println("Penjumlahan NIM = " + sum);
     }
 }
